@@ -121,8 +121,9 @@ nav .nav-menu.open {
 }
 
 nav .nav-menu__link {
-  -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
+  width: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   display: inline-block;
@@ -130,6 +131,7 @@ nav .nav-menu__link {
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 300;
+  text-align: center;
 }
 
 nav .nav-menu__link.open {
