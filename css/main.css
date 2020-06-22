@@ -248,6 +248,7 @@ nav .nav-menu__link.active > a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 3;
 }
 
 .page-body .page-title {
