@@ -201,11 +201,11 @@ nav .nav-menu__link.active > a:hover {
 }
 
 .home .name {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-family: "my-font-2";
   font-weight: 500;
-  color: #7d0f8d;
-  margin-left: 10vw;
+  color: #ba01d6;
+  margin-left: 7vw;
   -webkit-transform: rotate(-15deg);
           transform: rotate(-15deg);
 }
@@ -217,12 +217,12 @@ nav .nav-menu__link.active > a:hover {
 .home .designation {
   font-family: "my-font";
   font-weight: 200;
-  font-size: 2.5rem;
-  margin-top: -2vh;
-  margin-left: 20vw;
+  font-size: 2rem;
+  margin-top: -5vh;
+  margin-left: 15vw;
   line-height: 2.5rem;
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
 }
 
 .home .image img {
@@ -456,10 +456,14 @@ nav .nav-menu__link.active > a:hover {
 .contact-page-content .banner p {
   padding: 5rem 1rem;
   font-size: 1rem;
+  line-height: 1.3rem;
 }
 
 .contact-page-content .banner p span {
-  color: #7d0f8d;
+  color: white;
+  padding: .5rem 0rem;
+  text-decoration: underline;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -691,6 +695,12 @@ nav .nav-menu__link.active > a:hover {
   }
   .contact-page-content .banner p {
     padding: 5rem 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .contact-page-content .banner p span {
+    text-decoration: underline;
+    color: white;
     font-size: 2rem;
   }
 }
