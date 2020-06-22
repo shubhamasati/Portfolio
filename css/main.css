@@ -17,7 +17,7 @@
 
 .menu-btn {
   position: absolute;
-  z-index: 1;
+  z-index: 20;
   right: 1rem;
   top: 1rem;
   height: 20px;
@@ -269,9 +269,197 @@ nav .nav-menu__link.active > a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.page-body .project-page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-body .project-page-content .project-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55%;
+  height: 200px;
+  margin: 2vh;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page-body .project-page-content .project-container .project-title {
+  position: absolute;
+  height: 85%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.page-body .project-page-content .project-container .project-title h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.page-body .project-page-content .project-container img {
+  display: block;
+  width: 100%;
+  height: 85%;
+}
+
+.page-body .project-page-content .project-container .description {
+  position: absolute;
+  top: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+  overflow: hidden;
+}
+
+.page-body .project-page-content .project-container .description p {
+  display: none;
+}
+
+.page-body .project-page-content .project-container .description a {
+  position: relative;
+  text-decoration: underline;
+  text-align: justify;
+  width: 100%;
+  padding-top: .4rem;
+  color: black;
+}
+
+.about-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-section .name h2 {
+  font-family: "my-font-2";
+}
+
+.about-section .name h2 span {
+  color: #6a3e7d;
+}
+
+.about-section .name h1 {
+  font-size: 3rem;
+  margin-top: 2.5vh;
+  font-family: "my-font-2";
+}
+
+.about-section .name h1 span {
+  color: #6a3e7d;
+}
+
+.about-section p {
+  text-align: center;
+  padding: 2% 15%;
+}
+
+.skill-section {
+  margin-top: 5vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+.skill-section h2 {
+  text-align: center;
+  font-family: "my-font-2";
+  color: #6a3e7d;
+  margin-bottom: 1rem;
+  -webkit-transform: rotateX(30deg);
+          transform: rotateX(30deg);
+}
+
+.skill-section .skills img {
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 100%;
+  padding: .2rem;
+}
+
+.contact-page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 10vw;
+  margin-top: 5 vh;
+}
+
+.contact-page-content .banner {
+  width: 90%;
+  height: 80%;
+  border-left: solid #fff .2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.contact-page-content .banner p {
+  padding: 5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.contact-page-content .banner p span {
+  color: #7d0f8d;
 }
 
 @media screen and (min-width: 768px) {
@@ -319,11 +507,9 @@ nav .nav-menu__link.active > a:hover {
   }
   .page-body .page-title {
     position: fixed;
+    margin: auto;
     top: 50vh;
     left: 2vw;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     font-family: "my-font-2";
     font-size: 2rem;
     -webkit-transform: rotate(-20deg);
@@ -333,11 +519,184 @@ nav .nav-menu__link.active > a:hover {
             flex: 1;
   }
   .page-body .page-content {
-    -webkit-box-flex: 4;
-        -ms-flex: 4;
-            flex: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 15vh;
+    margin-left: 25vw;
+  }
+  .page-body .project-page-content {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-top: 15vh;
+    margin-left: 25vw;
+  }
+  .page-body .project-page-content .project-container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30%;
+    height: 250px;
+    background: white;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .page-body .project-page-content .project-container .project-title {
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+  .page-body .project-page-content .project-container .project-title h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .page-body .project-page-content .project-container img {
+    display: block;
+    width: 100%;
+    height: 70%;
+  }
+  .page-body .project-page-content .project-container .description {
+    position: absolute;
+    top: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .page-body .project-page-content .project-container .description p {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    color: black;
+    text-overflow: ellipsis;
+  }
+  .page-body .project-page-content .project-container .description a {
+    position: relative;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 3vh;
+    color: white;
+  }
+  .page-body .project-page-content .project-container:hover .description {
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-70%);
+    -webkit-transform: translateY(-70%);
+  }
+  .page-body .project-page-content .project-container:hover .description p {
+    color: white;
+  }
+  .about-section .name h2 {
+    font-family: "my-font-2";
+    font-size: 2rem;
+  }
+  .about-section .name h1 {
+    font-size: 5rem;
+    margin-top: 2.5vh;
+    font-family: "my-font-2";
+  }
+  .about-section .name h1 span {
+    color: #6a3e7d;
+  }
+  .about-section p {
+    text-align: center;
+    padding: 2% 15%;
+    font-size: 1.2rem;
+  }
+  .skill-section {
     margin-top: 10vh;
   }
+  .skill-section h2 {
+    text-align: center;
+    font-family: "my-font-2";
+  }
+  .skill-section .skills img {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+  }
+  .contact-page-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 25vw;
+    margin-top: 25vh;
+  }
+  .contact-page-content .banner {
+    width: 90%;
+    height: 80%;
+  }
+  .contact-page-content .banner p {
+    padding: 5rem 1rem;
+    font-size: 2rem;
+  }
+}
+
+html {
+  overflow-y: scroll;
 }
 
 body {
@@ -377,6 +736,7 @@ header {
 main {
   width: 100%;
   height: 100%;
+  z-index: 3;
 }
 
 main .overlay {
@@ -394,7 +754,7 @@ main .social-icons {
   position: fixed;
   bottom: 1rem;
   left: 1rem;
-  z-index: 5;
+  z-index: 3;
 }
 
 main .social-icons a {
