@@ -386,7 +386,7 @@ nav .nav-menu__link.active > a:hover {
 }
 
 .about-section .name h2 span {
-  color: #6a3e7d;
+  color: #9509d1;
 }
 
 .about-section .name h1 {
@@ -396,7 +396,7 @@ nav .nav-menu__link.active > a:hover {
 }
 
 .about-section .name h1 span {
-  color: #6a3e7d;
+  color: #9509d1;
 }
 
 .about-section p {
@@ -414,7 +414,7 @@ nav .nav-menu__link.active > a:hover {
 .skill-section h2 {
   text-align: center;
   font-family: "my-font-2";
-  color: #6a3e7d;
+  color: #9509d1;
   margin-bottom: 1rem;
   -webkit-transform: rotateX(30deg);
           transform: rotateX(30deg);
@@ -647,6 +647,9 @@ nav .nav-menu__link.active > a:hover {
     font-family: "my-font-2";
     font-size: 2rem;
   }
+  .about-section .name h2 span {
+    color: #6a3e7d;
+  }
   .about-section .name h1 {
     font-size: 5rem;
     margin-top: 2.5vh;
@@ -666,6 +669,7 @@ nav .nav-menu__link.active > a:hover {
   .skill-section h2 {
     text-align: center;
     font-family: "my-font-2";
+    color: #6a3e7d;
   }
   .skill-section .skills img {
     width: 4rem;
